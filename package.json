@@ -1,0 +1,23 @@
+{
+  "name": "next-fake-me",
+  "version": "0.0.1",
+  "scripts": {
+    "format": "prettier-standard 'pages/**/*.js'",
+    "dev": "next",
+    "build": "next build",
+    "start": "next start"
+  },
+  "dependencies": {
+    "cowsay-browser": "^1.1.8",
+    "next": "^6.1.1",
+    "react": "^16.4.1",
+    "react-animations": "^1.0.0",
+    "react-dom": "^16.4.1",
+    "styled-components": "^3.3.3"
+  },
+  "devDependencies": {
+    "babel-plugin-styled-components": "^1.1.5",
+    "prettier-standard": "^8.0.1"
+  },
+  "license": "ISC"
+}
