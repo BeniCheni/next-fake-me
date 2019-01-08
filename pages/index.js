@@ -1,6 +1,7 @@
 import React from 'react'
 import styled, { keyframes } from 'styled-components'
 import cowsay from 'cowsay-browser'
+import Head from 'next/head'
 import { flash, flip, hinge, rubberBand, swing, wobble } from 'react-animations'
 import {
   FacebookIcon,
@@ -66,7 +67,6 @@ const LogoWobble = styled.img`
 const CowsayPre = styled.pre`
   white-space: pre-wrap;
   white-space: -moz-pre-wrap;
-  white-space: -pre-wrap;
   white-space: -o-pre-wrap;
   word-wrap: break-word;
 `
@@ -87,7 +87,11 @@ const TUMBLR_TITLE = 'benicheni photography @ tumblr ~ 📸'
 const FACEBOOK_URL = 'https://www.facebook.com/BeniLCheni'
 const FACEBOOK_TITLE = 'Beni von Cheni @ Facebook 🌋'
 
-export default () => (
+export default () => [
+  <Head>
+    <title>My page title</title>
+    <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+  </Head>,
   <Root>
     <LogoSection>
       <LogoHinge src='/static/react.svg' alt='logo' />
@@ -141,4 +145,4 @@ export default () => (
       </FacebookShareButton>
     </LogoSection>
   </Root>
-)
+]
