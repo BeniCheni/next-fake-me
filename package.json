@@ -1,6 +1,6 @@
 {
   "name": "next-fake-me",
-  "version": "0.0.2-0",
+  "version": "1.0.0-0",
   "scripts": {
     "format": "prettier-standard 'pages/**/*.js'",
     "dev": "next",
