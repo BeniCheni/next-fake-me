@@ -7,8 +7,11 @@ const DisplayCore = styled.div`
   color: white;
   text-align: right;
   font-weight: 200;
-  flex: 0 0 auto;
+  flex: 2 0 auto;
   width: 100%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
 
   > div {
     font-size: 2.5rem;

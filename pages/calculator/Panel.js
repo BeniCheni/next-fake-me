@@ -8,7 +8,7 @@ const ButtonPanelCore = styled.div`
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  flex: 1 0 auto;
+  flex: 8 0 auto;
 
   > div {
     width: 100%;
@@ -18,7 +18,7 @@ const ButtonPanelCore = styled.div`
   }
 `
 
-class ButtonPanel extends React.Component {
+class Panel extends React.Component {
   static propTypes = {
     clickHandler: PropTypes.func
   }
@@ -64,4 +64,4 @@ class ButtonPanel extends React.Component {
   }
 }
 
-export default ButtonPanel
+export default Panel

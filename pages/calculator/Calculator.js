@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import Display from './Display'
-import ButtonPanel from './ButtonPanel'
+import Panel from './Panel'
 
 const CalculatorCore = styled.div`
   display: flex;
@@ -20,7 +20,7 @@ export default class Calculator extends React.Component {
     return (
       <CalculatorCore>
         <Display value={this.props.next || this.props.total || '0'} />
-        <ButtonPanel clickHandler={this.handleClick} />
+        <Panel clickHandler={this.handleClick} />
       </CalculatorCore>
     )
   }

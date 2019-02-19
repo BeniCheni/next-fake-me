@@ -2,7 +2,7 @@ import React from 'react'
 import { createGlobalStyle } from 'styled-components'
 import Calculator from './calculator/Calculator'
 
-const CalculatorPlayground = createGlobalStyle`
+const CalculatorGlobalStyles = createGlobalStyle`
   html {
      height: 100%;
      font-size: 10px;
@@ -47,7 +47,7 @@ const CalculatorPlayground = createGlobalStyle`
 
 export default () => (
   <React.Fragment>
-    <CalculatorPlayground />
+    <CalculatorGlobalStyles />
     <Calculator />
   </React.Fragment>
 )
